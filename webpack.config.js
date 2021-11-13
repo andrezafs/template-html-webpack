@@ -58,6 +58,13 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.(jpg|jpeg|png|ico|svg)$/,
+        loader: "file-loader",
+        options: {
+          outputPath: "images",
+        },
+      }
     ],
   },
   plugins: [
